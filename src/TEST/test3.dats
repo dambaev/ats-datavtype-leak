@@ -3,11 +3,6 @@
 
 #define ATS_DYNLOADFLAG 0
 
-#define LIBS_targetloc "../libs" (* search path for external libs *)
-
-#include "{$LIBS}/ats-bytestring/HATS/bytestring.hats" (* overload operators *)
-staload UN="prelude/SATS/unsafe.sats"
-
 extern fn
   {a:viewt0ype}
   {env:viewt0ype}

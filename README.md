@@ -2,8 +2,8 @@ This repo contains reduced ATS2 code, that al;lows to ignore a datavtype,
 producing memory leak. How to build:
 
 ```bash
-$ git clone https://github.com/dambaev/datavtype-leak.git
-cd datavtype-leak/
+$ git clone https://github.com/dambaev/ats-datavtype-leak.git
+cd ats-datavtype-leak/
 nix-shell ./shell
 cd src
 make test3
@@ -13,7 +13,7 @@ make test3
 
 test3 contains a typechecked program, that is leaking a datavtype:
 ```
-$ valgrind src/test3 
+$ valgrind test3 
 ==3294== Memcheck, a memory error detector
 ==3294== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
 ==3294== Using Valgrind-3.15.0 and LibVEX; rerun with -h for copyright info
